@@ -18,12 +18,11 @@ abstract class Race {
   // nesta classe deve estar apenas a assinatura do método (por isso não tem return).
   abstract get maxLifePoints(): number;
 
-  // Apenas as classes herdeiras poderão dar nomes
+  // método de acesso (público), para ler uma propriedade privada: getter
   get name(): string {
     return this._name;
   }
 
-  // Apenas as classes herdeiras poderão dar destrezas
   get dexterity(): number {
     return this._dexterity;
   }
