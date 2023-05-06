@@ -1,10 +1,8 @@
 import Race from './Race';
 
-class Elf extends Race {
+export default class Elf extends Race {
 
   constructor() {
-    
+
   }
 }
-
-export default Elf;
