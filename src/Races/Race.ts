@@ -1,7 +1,7 @@
 // Podemos apenas herdar dela, não instânciar desta classe
 abstract class Race {
-  private _name: string;
-  private _dexterity: number;
+  protected _name: string;
+  protected _dexterity: number;
 
   constructor(n: string, d: number) {
     this._name = n;
