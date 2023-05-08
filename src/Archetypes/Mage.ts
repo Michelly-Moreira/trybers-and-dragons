@@ -9,7 +9,7 @@ export default class Mage extends Archetype {
     super(name);
     this._energyType = 'mana';
     Mage._createdArchetypeInstances += 1;
-}
+  }
 
   public get energyType(): EnergyType {
     return this._energyType;
