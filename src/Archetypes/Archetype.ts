@@ -27,5 +27,7 @@ export default abstract class Archetype {
     throw new Error('Not implemented');
   }
 
+  // método assinado mas, não implementado.
+  // deverá retornar nas classes especializadas o tipo de energia.
   abstract get energyType(): EnergyType;
 }
