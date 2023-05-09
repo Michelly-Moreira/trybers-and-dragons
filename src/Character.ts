@@ -54,7 +54,7 @@ export default class Character implements Fighter {
     return this._dexterity;
   }
 
-  // o retorno de energy é um objeto, por isso o spread operator
+  // o retorno de energy é um objeto, por isso o spread operator retornando todo o objeto dentro das chaves
   get energy(): Energy {
     return { ...this._energy };
   }
