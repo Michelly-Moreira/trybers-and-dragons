@@ -28,4 +28,33 @@ export default class Character implements Fighter {
       amount: Math.floor(Math.random() * (10 - 1 + 1) + 1),
     };
   }
+
+  get race(): Race {
+    return this._race;
+  }
+
+  get archetype(): Archetype {
+    return this._archetype;
+  }
+
+  get lifePoints(): number {
+    return this._lifePoints;
+  }
+
+  get strength(): number {
+    return this._strength;
+  }
+
+  get defense(): number {
+    return this._defense;
+  }
+
+  get dexterity(): number {
+    return this._dexterity;
+  }
+
+  // energy é um objeto
+  get energy(): Energy {
+    return { ...this._energy };
+  }
 }
