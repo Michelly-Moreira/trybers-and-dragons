@@ -6,6 +6,7 @@ interface Fighter{
   _defense: number;
   _energy?: Energy;
 
+  // métodos ccontroladores da interface Fighter
   attack(enemy: Fighter): void;
   special?(enemy: Fighter): void;
   levelUp(): void;
