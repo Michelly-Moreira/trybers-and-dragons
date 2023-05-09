@@ -17,6 +17,7 @@ export default class Monster implements SimpleFighter {
     return this._strength;
   }
 
+  // extendendo os métodos da interface SimpleFigther para a classe Monster
   receiveDamage(attackPoints: number): number {
     const damage = this._lifePoints - attackPoints;
     if (damage === 0) {
