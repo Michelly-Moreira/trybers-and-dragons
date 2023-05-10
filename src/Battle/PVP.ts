@@ -3,8 +3,8 @@ import Character from '../Character';
 import { SimpleFighter } from '../Fighter';
 
 export default class PVP extends Battle {
-  private _player1: Character | SimpleFighter;
-  private _player2: Character | SimpleFighter;
+  protected _player1: Character | SimpleFighter;
+  protected _player2: Character | SimpleFighter;
 
   constructor(p1: Character | SimpleFighter, p2: Character | SimpleFighter) {
     super(p1);
