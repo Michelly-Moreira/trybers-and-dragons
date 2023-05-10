@@ -91,7 +91,7 @@ export default class Character implements Fighter {
   // Este método retorna o dano causado pelo ataque especial, que será utilizado no método attack da classe inimiga.
   // Ele consome toda a energia atual do personagem, definindo o valor de energy.amount para 0.
   // Por fim, ele retorna o dano causado, que será utilizado para calcular a redução dos pontos de vida do inimigo.
-  
+
   special(): number {
     const damage = this.strength * this.energy.amount;
     this._energy.amount = 0;
